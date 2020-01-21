@@ -2,22 +2,22 @@ import React from "react"
 import NavigationElement from "../NavigationItem/NavigationElement"
 import styles from "./Header.module.scss"
 import logo from "../../../resources/logo.png"
-
-const linkLabel = [{ label: "Geneza", toLink: "geneza" },
-  { label: "Artyści", toLink: "artysci" },
-  { label: "Bilety", toLink: "bilety" },
-  { label: "Twórcy", toLink: "tworcy" },
-  { label: "Kontakt", toLink: "kontakt" }]
+import { Link } from "gatsby"
 
 const Header = () => {
-  let allLinks = linkLabel.map((element) => {
-      return (<NavigationElement toLink={element.toLink}>{element.label}</NavigationElement>)
-    },
-  )
   return (
     <header className={styles.header}>
-      <img src={logo} alt="logo"/>
-      {allLinks}
+      <Link to="/" className={styles.header__title}>
+        <img src={logo} alt="logo" className={styles.header__titleLogo}/>
+        <h3>Marzenia Utkane z Gwiazd</h3>
+      </Link>
+      <div className={styles.header__navigationPanel}>
+        <NavigationElement toLink="geneza">Geneza</NavigationElement>
+        <NavigationElement toLink="artysci">Artyści</NavigationElement>
+        <NavigationElement toLink="bilety">Bilety</NavigationElement>
+        <NavigationElement toLink="kontakt">Twórcy</NavigationElement>
+        <NavigationElement toLink="organizatorzy" bigger={true}>Organizatorzy</NavigationElement>
+      </div>
     </header>
   )
 }

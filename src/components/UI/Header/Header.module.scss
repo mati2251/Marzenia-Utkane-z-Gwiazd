@@ -1,6 +1,31 @@
+@import "../../../styles/global";
+
 .header{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  height: 120px;
+  justify-content: space-around;
+  height: 110px;
+  align-items: center;
+  border: 1px solid $header-border;
+  z-index: 0;
+}
+
+.header__title{
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__title--logo{
+  margin-right: 15px;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+}
+
+.header__navigationPanel{
+  display: flex;
+  flex-direction: row;
 }

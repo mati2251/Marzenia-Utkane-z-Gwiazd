@@ -1,8 +1,9 @@
 @import "../../../styles/color";
 
 .header__element--pinkBorder{
-  width: 150px;
-  height: 50px;
+  margin-top: 5px;
+  width: 120px;
+  height: 40px;
   border: 4px solid $accent-color;
   text-align: left;
   letter-spacing: 0;
@@ -10,26 +11,41 @@
   align-items: center;
   padding-left: 10px;
   background-color: white;
+  position: relative;
+  top: 0;
+  right: 0;
   z-index: 0;
+  transition: all 0.2s ease-out;
 }
 
 .header__element--blackBorder{
-  width: 160px;
-  height: 50px;
+  width: 130px;
+  height: 40px;
   border: 4px solid $second-accent-color;
   position: relative;
-  top: -69px;
-  right: -11px;
+  top: -56px;
+  right: -8px;
   z-index: -1;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.header__element--bigger{
+  .header__element--pinkBorder{
+    width: 200px;
+  }
+
+  .header__element--blackBorder{
+    width: 210px;
+  }
 }
 
 .header__element:hover{
-  .header__element--blackBorder{
+
+  .header__element--pinkBorder{
     position: relative;
-    top: -58px;
-    right: 0;
-    transition: all 0.3s ease-out;
+    top: -8px;
+    right: -8px;
+    transition: all 0.2s ease-out;
   }
 }
 
@@ -38,4 +54,5 @@
   cursor: pointer;
   height: 54px;
   width: 164px;
+  margin-right: 40px;
 }
