@@ -4,7 +4,19 @@ import styles from "./Header.module.scss"
 import logo from "../../../resources/logo.png"
 import { Link } from "gatsby"
 
-const Header = () => {
+const linkLabel = [{ label: "Geneza", toLink: "geneza" },
+  { label: "Artyści", toLink: "artysci" },
+  { label: "Bilety", toLink: "bilety" },
+  { label: "Organizatorzy", toLink: "organizatorzy" },
+  { label: "Kontakt", toLink: "kontakt" }]
+
+const Header = ({path}) => {
+
+  const allLinks = linkLabel.map((element) => {
+      return (<NavigationElement toLink={element.toLink} key={element.toLink}>{element.label}</NavigationElement>)
+    },
+  )
+
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.header__title}>
@@ -12,11 +24,7 @@ const Header = () => {
         <h3>Marzenia Utkane z Gwiazd</h3>
       </Link>
       <div className={styles.header__navigationPanel}>
-        <NavigationElement toLink="geneza">Geneza</NavigationElement>
-        <NavigationElement toLink="artysci">Artyści</NavigationElement>
-        <NavigationElement toLink="bilety">Bilety</NavigationElement>
-        <NavigationElement toLink="kontakt">Twórcy</NavigationElement>
-        <NavigationElement toLink="organizatorzy" bigger={true}>Organizatorzy</NavigationElement>
+        {allLinks}
       </div>
     </header>
   )
