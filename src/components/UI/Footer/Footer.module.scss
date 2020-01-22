@@ -40,6 +40,9 @@
 }
 
 .footer__main--elementDark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-top: 8px;
   text-decoration: none;
   color: #9F9ABB;
@@ -53,4 +56,10 @@
 .footer__main--columnContact {
   display: flex;
   flex-direction: row;
+}
+
+.footer__main--socialIcon{
+  width: 30px;
+  margin-right: 10px;
+  height: 30px;
 }

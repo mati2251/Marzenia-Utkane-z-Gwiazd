@@ -5,19 +5,6 @@ import Footer from "../components/UI/Footer/Footer"
 const IndexPage = () => (
   <>
     <Header/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
     <Footer/>
   </>
 )
