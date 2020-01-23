@@ -1,0 +1,17 @@
+@import "../../../styles/color";
+
+.header{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+  border: 1px solid $header-border;
+  z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .header{
+  display: flex;
+  }
+}

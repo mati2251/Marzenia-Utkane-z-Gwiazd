@@ -1,11 +1,39 @@
 import React from "react"
-import Header from "../components/UI/Header/Header"
-import Footer from "../components/UI/Footer/Footer"
+import Layout from "../components/UI/Layout/Layout"
 
 const IndexPage = () => (
   <>
-    <Header/>
-    <Footer/>
+      <Layout>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </Layout>
   </>
 )
 

@@ -10,7 +10,7 @@ const linkLabel = [{ label: "Geneza", toLink: "geneza" },
   { label: "Organizatorzy", toLink: "organizatorzy" },
   { label: "Kontakt", toLink: "kontakt" }]
 
-const Header = ({path}) => {
+const Header = ({className}, ) => {
 
   const allLinks = linkLabel.map((element) => {
       return (<NavigationElement toLink={element.toLink} key={element.toLink}>{element.label}</NavigationElement>)
