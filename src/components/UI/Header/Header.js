@@ -13,7 +13,7 @@ const linkLabel = [{ label: "Geneza", toLink: "geneza" },
 const Header = ({className}, ) => {
 
   const allLinks = linkLabel.map((element) => {
-      return (<NavigationElement toLink={element.toLink} key={element.toLink}>{element.label}</NavigationElement>)
+      return (<NavigationElement toLink={element.toLink} className={styles.header__navigationElement} key={element.toLink}>{element.label}</NavigationElement>)
     },
   )
 

@@ -1,17 +1,128 @@
 @import "../../../styles/color";
 
 .header{
-  display: none;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  height: 80px;
-  align-items: center;
+  height: 70px;
   border: 1px solid $header-border;
-  z-index: 0;
+  justify-content: center;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0 2px 2px 0 rgba(194, 194, 194, 1);
+  box-shadow: 0 2px 2px 0 rgba(194, 194, 194, 1);
+  align-items: center;
+}
+
+.sidebar{
+  display: none;
+}
+
+.header__link{
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.header__logo{
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.header__openLogo{
+  width: 40px;
+  height: 40px;
+  color: $accent-color;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 @media (max-width: 900px) {
-  .header{
+  .sidebar{
+  display: block;
+  }
+}
+
+.header__openLogo--button{
+  all: unset;
+  cursor: pointer;
+}
+
+%aside {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  background-color: white;
+  border-left: 1px $header-border solid;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  transition: 0.4s all ease;
+  align-items: center;
+}
+
+.aside--close{
+  right: -200px;
+  @extend %aside;
+}
+
+.aside--open{
+  right: 0;
+  @extend %aside;
+}
+
+.aside__closeMenu{
+  width: 40px;
+  height: 40px;
+  color: $accent-color;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.aside__navigationElement{
+  padding: 20px;
+}
+
+.aside__closeMenuButton{
+  cursor: pointer;
+  all: unset;
+  align-self: end;
+  margin-top: 15px;
+  color: $accent-color;
+  margin-left: 20px;
+}
+
+@media (max-width: 360px) {
+  .header__openLogo {
+    width: 30px;
+    height: 30px;
+  }
+  .aside__closeMenu{
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__logo{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+@media (max-width: 330px) {
+  .header__openLogo {
+    width: 30px;
+    height: 30px;
+  }
+  .aside__closeMenu{
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__logo{
+    width: 40px;
+    height: 40px;
   }
 }
