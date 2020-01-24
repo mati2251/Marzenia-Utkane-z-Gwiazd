@@ -18,7 +18,7 @@ const Footer = () => (
         <a href="http://www.google.com" className={styles.footer__mainElementDark}><h4>Sponsorzy</h4></a>
         <a href="http://www.google.com" className={styles.footer__mainElementDark}><h4>Sponsorzy</h4></a>
       </div>
-      <div>
+      <div className={styles.footer__mainColumn}>
         <h4>Kontakt:</h4>
         <div className={styles.footer__mainColumnContact}>
           <div>
@@ -32,7 +32,7 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div>
+      <div className={styles.footer__mainColumn}>
         <h4>Social Media:</h4>
         <a href="https://www.facebook.com/marzeniautkanezgwiazd/" className={styles.footer__mainElementDark}>
           <FaFacebook className={styles.footer__mainSocialIcon}/> <h4> Facebook </h4></a>

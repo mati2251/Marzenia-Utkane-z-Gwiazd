@@ -74,6 +74,7 @@
 }
 
 .aside__closeMenu{
+  cursor: pointer;
   width: 40px;
   height: 40px;
   color: $accent-color;
@@ -85,7 +86,7 @@
   padding: 20px;
 }
 
-.aside__closeMenuButton{
+.aside__closeMenu--Button{
   cursor: pointer;
   all: unset;
   align-self: end;
