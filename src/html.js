@@ -21,6 +21,7 @@ export default function HTML(props) {
       <meta property="og:image" content=""/>
       <meta property="og:url" content=""/>
       <meta property="og:site_name" content="Marzenia Utkane z Gwiazd"/>
+      <link rel="icon" href="resources/logo.png"/>
       {props.headComponents}
     </head>
     <body {...props.bodyAttributes}>
@@ -43,4 +44,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};

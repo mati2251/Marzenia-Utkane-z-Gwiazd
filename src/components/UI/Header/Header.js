@@ -15,7 +15,7 @@ const Header = ({className}, ) => {
   const allLinks = linkLabel.map((element) => {
       return (<NavigationElement toLink={element.toLink} className={styles.header__navigationElement} key={element.toLink}>{element.label}</NavigationElement>)
     },
-  )
+  );
 
   return (
     <header className={styles.header}>
