@@ -7,10 +7,13 @@
   height: 80px;
   align-items: center;
   border: 1px solid $header-border;
-  z-index: 0;
   -webkit-box-shadow: 0 2px 2px 0 rgba(194, 194, 194, 1);
   -moz-box-shadow: 0 2px 2px 0 rgba(194, 194, 194, 1);
   box-shadow: 0 2px 2px 0 rgba(194, 194, 194, 1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 .header__title {
