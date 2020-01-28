@@ -27,7 +27,7 @@ const Sidebar = () => {
       <header className={styles.header}>
         <Link to="/" className={styles.header__link}>
           <img src={logo} alt="logo" className={styles.header__logo}/>
-          <h3>Marzenia Utkane z Gwiazd</h3>
+          <h2>Marzenia Utkane z Gwiazd</h2>
         </Link>
         <button className={styles.header__openLogoButton} onClick={() => {setAsideStyle(styles.asideOpen)}}><MdMenu className={styles.header__openLogo}/></button>
       </header>

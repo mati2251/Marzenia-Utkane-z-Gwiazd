@@ -5,9 +5,9 @@ import {Link} from 'gatsby';
 const NavigationElement = (props) => {
   return(
     <Link className={`${styles.header__element} ${props.className}`} to={props.toLink}>
-      <h3>
+      <h2>
       {props.children}
-      </h3>
+      </h2>
       <div/>
     </Link>
   )

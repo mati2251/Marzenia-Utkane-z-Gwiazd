@@ -21,7 +21,7 @@ const Header = ({className}, ) => {
     <header className={styles.header}>
       <Link to="/" className={styles.header__title}>
         <img src={logo} alt="logo" className={styles.header__titleLogo}/>
-        <h3>Marzenia Utkane z Gwiazd</h3>
+        <h2>Marzenia Utkane z Gwiazd</h2>
       </Link>
       <div className={styles.header__navigationPanel}>
         {allLinks}
