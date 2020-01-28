@@ -24,8 +24,8 @@ const Sidebar = () => {
 
     return (
       <>
-          <div className={styles.sidebar}>
-              <header className={styles.header}>
+          <header className={styles.sidebar}>
+              <div className={styles.header}>
                   <Link to="/" className={styles.header__link}>
                       <img src={logo} alt="logo" className={styles.header__logo}/>
                       <h2>Marzenia Utkane z Gwiazd</h2>
@@ -33,8 +33,8 @@ const Sidebar = () => {
                   <button className={styles.header__openLogoButton} onClick={() => {
                       setAsideStyle(styles.asideOpen)
                   }}><MdMenu className={styles.header__openLogo}/></button>
-              </header>
-          </div>
+              </div>
+          </header>
           <aside className={asideStyle}>
               <button className={styles.aside__closeMenuButton} onClick={() => {
                   setAsideStyle(styles.asideClose)

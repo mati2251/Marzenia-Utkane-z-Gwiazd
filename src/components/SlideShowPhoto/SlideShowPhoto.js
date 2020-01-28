@@ -24,10 +24,10 @@ const Slider = () => {
 
     const imagesJSX = images.map((item, index) => {
         if (number === index) {
-            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.key} alt="From slider"
+            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.url} alt="From slider"
                         style={{ opacity: 1, zIndex: 0 }}/>
         } else {
-            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.key} alt="From slider"
+            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.url} alt="From slider"
                         style={{ opacity: 0.5, zIndex: -2 }}/>
         }
     })
@@ -41,7 +41,7 @@ const Slider = () => {
     }, 3000)
 
     return (
-      <>
+      <div className={styles.slider}>
           <div className={styles.slideShowPhoto}>
               <div className={styles.slideShowPhoto__photos}>
                   <h1>Charytatywny Koncert Wielkanocny</h1>
@@ -49,7 +49,7 @@ const Slider = () => {
               </div>
           </div>
           <div className={styles.slideShowPhotoBlack}/>
-      </>
+      </div>
     )
 }
 
