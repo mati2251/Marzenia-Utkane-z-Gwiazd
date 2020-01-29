@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql, useStaticQuery} from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import styles from "./SlideShowPhoto.module.scss"
 
 const Slider = () => {
@@ -24,19 +24,21 @@ const Slider = () => {
 
     const imagesJSX = images.map((item, index) => {
         if (number === index) {
-            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.url} alt="From slider"
+            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.url} alt="z pokazu zdjec"
                         style={{ opacity: 1, zIndex: 0 }}/>
         } else {
-            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.url} alt="From slider"
+            return <img src={item.zdjecieDoSlidera.url} key={item.zdjecieDoSlidera.url} alt="z pokazu zdjec"
                         style={{ opacity: 0.5, zIndex: -2 }}/>
         }
     })
 
     setTimeout(() => {
-        if (number + 1 === images.length) {
-            setNumber(0)
-        } else {
-            setNumber(number + 1)
+        if (document.hidden) {
+            if (number + 1 === images.length) {
+                setNumber(0)
+            } else {
+                setNumber(number + 1)
+            }
         }
     }, 3000)
 
@@ -53,4 +55,4 @@ const Slider = () => {
     )
 }
 
-export default Slider;
+export default Slider
