@@ -1,18 +1,13 @@
 @import "../../styles/color";
 
-$height: 170px;
-$heightMedium: 100px;
-$heightSmall: 80px;
-
 .SponsorSlider {
-  height: $height;
   width: 100%;
   padding-top: 20px;
 }
 
 .SponsorSlider img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .SponsorSlider--xHide a {
@@ -22,7 +17,8 @@ $heightSmall: 80px;
 .SponsorSlider--xHide {
   margin-top: 10px;
   position: relative;
-  height: $height;
+  height: 80px;
+  padding-bottom: 10px;
   width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -66,24 +62,32 @@ $heightSmall: 80px;
   }
 }
 
+@media (max-width: 900px) {
+  .SponsorSlider--xHide{
+    width: 101%;
+  }
+}
+
+@media (max-width: 700px) {
+  .SponsorSlider--xHide{
+    width: 95%;
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 500px) {
   .SponsorSlider__label h2 {
     font-size: 16px;
   }
 
+  .SponsorSlider--xHide{
+    width: 97.5%;
+    margin-left: 5px;
+  }
+
   .SponsorSlider__socialMediaLogo {
     width: 25px;
     height: 25px;
-  }
-
-  .SponsorSlider img {
-    width: 70px;
-    height: 70px;
-    margin-left: -30px;
-  }
-
-  .SponsorSlider {
-    height: $heightMedium;
   }
 }
 
@@ -92,18 +96,21 @@ $heightSmall: 80px;
     font-size: 12px;
   }
 
+  .SponsorSlider img{
+    width: 70px;
+    height: 70px;
+  }
+
+
+  .SponsorSlider--xHide{
+    width: 110%;
+    margin-left: -15px;
+    padding-bottom: 0;
+    height: 70px;
+  }
+
   .SponsorSlider__socialMediaLogo {
     width: 25px;
     height: 25px;
-  }
-
-  .SponsorSlider img {
-    width: 60px;
-    height: 60px;
-    margin-left: -40px;
-  }
-
-  .SponsorSlider {
-    height: $heightSmall
   }
 }

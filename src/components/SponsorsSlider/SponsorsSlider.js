@@ -22,12 +22,12 @@ const SponsorSlider = () => {
 
     const logosJSX = query.data.sponsorzies.map((item, index) => {
         let position = 0
-        if (query.data.sponsorzies.length * 100 - 100 * 2 < index * 100 + i) {
-            position = index * 100 + i - (query.data.sponsorzies.length * 100)
+        if (query.data.sponsorzies.length * 80 - 80 * 2 < index * 80 + i) {
+            position = index * 80 + i - (query.data.sponsorzies.length * 80)
         } else {
-            position = index * 100 + i;
+            position = index * 80 + i;
         }
-        if (position === -100) {
+        if (position === -80) {
             return (
               <a href={item.link} key={index} style={{ left: `${position}px` }}>
                   <img src={item.logo.url} alt="logo sponsora"/>
@@ -40,15 +40,15 @@ const SponsorSlider = () => {
         }
     })
 
-    // setTimeout(() => {
-    //     // if (!window.hidden) {
-    //         if (i + 100 > query.data.sponsorzies.length * 100) {
-    //             setI(0)
-    //         } else {
-    //             setI(i + 100)
-    //         }
-    //     // }
-    // }, 4000)
+    setTimeout(() => {
+        // if (!window.hidden) {
+            if (i + 80 > query.data.sponsorzies.length * 80) {
+                setI(0)
+            } else {
+                setI(i + 80)
+            }
+        // }
+    }, 4000)
 
     return (
       <div className={styles.SponsorSlider}>
