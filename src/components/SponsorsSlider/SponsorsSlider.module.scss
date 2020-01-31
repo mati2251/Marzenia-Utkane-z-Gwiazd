@@ -1,116 +1,45 @@
 @import "../../styles/color";
 
-.SponsorSlider {
-  width: 100%;
-  padding-top: 20px;
-}
-
-.SponsorSlider img {
-  width: 80px;
-  height: 80px;
-}
-
-.SponsorSlider--xHide a {
-  position: absolute;
-}
-
-.SponsorSlider--xHide {
-  margin-top: 10px;
-  position: relative;
-  height: 80px;
-  padding-bottom: 10px;
-  width: 100%;
-  overflow-y: hidden;
+.SponsorSlider{
+  display: flex;
+  flex-direction: row;
   overflow-x: hidden;
-}
-
-.SponsorSlider__label h2 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.SponsorSlider__label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.SponsorSlider__label a {
-  margin-left: 10px;
-}
-
-.SponsorSlider__socialMediaLogo {
-  width: 40px;
-  height: 40px;
-  color: $accent-color;
-}
-
-.SponsorSlider__socialMedia {
-  display: flex;
-  flex-direction: row;
-}
-
-@media (max-width: 700px) {
-  .SponsorSlider__label h2 {
-    font-size: 20px;
-  }
-
-  .SponsorSlider__socialMediaLogo {
-    width: 25px;
-    height: 25px;
-  }
+  position: relative;
+  padding-top: 20px;
+  height: 120px;
 }
 
 @media (max-width: 900px) {
-  .SponsorSlider--xHide{
-    width: 101%;
+  .SponsorSlider{
+    height: 95px;
   }
 }
 
 @media (max-width: 700px) {
-  .SponsorSlider--xHide{
-    width: 95%;
-    margin-left: 20px;
+  .SponsorSlider{
+    height: 65px;
   }
 }
 
 @media (max-width: 500px) {
-  .SponsorSlider__label h2 {
-    font-size: 16px;
-  }
-
-  .SponsorSlider--xHide{
-    width: 97.5%;
-    margin-left: 5px;
-  }
-
-  .SponsorSlider__socialMediaLogo {
-    width: 25px;
-    height: 25px;
+  .SponsorSlider{
+    height: 55px;
   }
 }
 
 @media (max-width: 350px) {
-  .SponsorSlider__label h2 {
-    font-size: 12px;
+  .SponsorSlider{
+    height: 45px;
   }
+}
 
-  .SponsorSlider img{
-    width: 70px;
-    height: 70px;
-  }
+.SponsorSlider a{
+  transition: all 0.5s ease;
+  position: absolute;
+  width: 14.3%;
+}
 
-
-  .SponsorSlider--xHide{
-    width: 110%;
-    margin-left: -15px;
-    padding-bottom: 0;
-    height: 70px;
-  }
-
-  .SponsorSlider__socialMediaLogo {
-    width: 25px;
-    height: 25px;
-  }
+.SponsorSlider img{
+  width: 100%;
+  height: auto;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styles from "./SlideShowPhoto.module.scss"
 
@@ -32,15 +32,23 @@ const Slider = () => {
         }
     })
 
-    setTimeout(() => {
-        if (document.hidden) {
-            if (number + 1 === images.length) {
-                setNumber(0)
-            } else {
-                setNumber(number + 1)
-            }
+    useEffect(() => {
+          setTimeout(() => {
+              nextPhoto()
+          },
+          3000
+      )
+      },
+    )
+
+    const nextPhoto = () => {
+        if (number + 1 === images.length) {
+            setNumber(0)
+        } else {
+            setNumber(number + 1)
         }
-    }, 3000)
+    }
+
 
     return (
       <div className={styles.slider}>
