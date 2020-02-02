@@ -21,11 +21,9 @@ const SponsorSlider = () => {
     const length = query.data.sponsorzies.length
     const logosJSX = query.data.sponsorzies.map((item, index) => {
         let position = index + i - 1
-        console.log("position " + position + "length " + length)
         if (length - 1 <= position) {
             position = position - length
         }
-        console.log(position)
         if (position < 7) {
             return (
               <a href={item.link} key={index} style={{ left: `${position * 14.3}%` }}>
