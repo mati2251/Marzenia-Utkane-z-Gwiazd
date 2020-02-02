@@ -2,13 +2,13 @@
 @import "color";
 
 html{
-  font-family: 'Montserrat', sans-serif;
-  color: $font-color;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 body{
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: $font-color;
   overflow-x: hidden;
 }
 

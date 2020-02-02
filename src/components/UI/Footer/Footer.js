@@ -16,7 +16,7 @@ const Footer = () => {
                       nazwa
                   }
               }
-          }`)
+          }`);
 
     const sponsors = data.data.sponsorzies
     const firstColumn = []
@@ -33,13 +33,13 @@ const Footer = () => {
             secondColumn.push(<a href={item.link} className={styles.footer__mainElementDark} key={item.id}>
                 <h3>{item.nazwa}</h3></a>)
         }
-    })
+    });
 
     const sponsorsJsx = (
       <div className={styles.footer__mainSponsorsRowDirection}>
           <div className={styles.footer__mainSponsorsColumn}>{firstColumn}</div>
           {secondColumn !== undefined ? <div className={styles.footer__mainSponsorsColumn}>{secondColumn}</div> : null}
-      </div>)
+      </div>);
 
     return (
       <footer className={styles.footer}>
@@ -85,6 +85,6 @@ const Footer = () => {
           </section>
       </footer>
     )
-}
+};
 
 export default Footer

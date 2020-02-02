@@ -16,7 +16,7 @@ const allLinks = linkLabel.map((element) => {
       return (<NavigationElement toLink={element.toLink} key={element.toLink}
                                  className={styles.aside__navigationElement}>{element.label}</NavigationElement>)
   },
-)
+);
 
 const Sidebar = () => {
 
