@@ -1,0 +1,47 @@
+.Tickets__image{
+  width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.Tickets__container{
+  height: 70%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Tickets__label{
+  font-size: 22px;
+}
+
+.headerStyle{
+  text-align: center;
+  color: #d960a7;
+}
+
+@media (max-width: 900px) {
+  .Tickets__label{
+    font-size: 20px;
+  }
+  @media (min-height: 1000px) {
+    .Tickets__container{
+     margin: 60px 0 60px 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .Tickets__label{
+    font-size: 16px;
+  }
+  .Tickets__container{
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Tickets__container{
+    flex-direction: column;
+  }
+}

@@ -15,7 +15,7 @@ const GenesisText = () => {
                       id
                   }
               }
-          }`)
+          }`);
 
     return (<>
             <img src={query.data.genezas[0].zdjecie.url} className={styles.GenesisText__photo} alt={"genesis"}/>
@@ -23,6 +23,6 @@ const GenesisText = () => {
             <img src={query.data.genezas[1].zdjecie.url} alt={"genesis"} className={styles.GenesisText__photo}/>
             <h2>{query.data.genezas[1].tekst}</h2>
     </>)
-}
+};
 
 export default GenesisText

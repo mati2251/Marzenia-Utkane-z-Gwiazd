@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/UI/Layout/Layout"
 import styles from '../styles/pages.module.scss'
-import { graphql, useStaticQuery } from "gatsby"
+import Tickets from "../components/Tickets/Tickets";
 
 
 const bilety = () => {
@@ -9,7 +9,7 @@ const bilety = () => {
     return (
       <Layout>
           <div className={styles.indexMain}>
-              <h1 className={styles.headerStyle}>Bilety</h1>
+              <Tickets/>
           </div>
       </Layout>
     )
