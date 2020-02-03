@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/UI/Layout/Layout"
 import SlideShowPhoto from "../components/SlideShowPhoto/SlideShowPhoto"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import style from "../styles/index.module.scss"
+import style from "../styles/pages.module.scss"
 import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider"
 
 const IndexPage = () => {

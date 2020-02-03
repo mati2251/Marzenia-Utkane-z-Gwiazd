@@ -22,7 +22,7 @@ export default function HTML(props) {
       <meta property="og:url" content=""/>
       <meta property="og:site_name" content="Marzenia Utkane z Gwiazd"/>
       <link rel="icon" href="resources/logo.png"/>
-      {props.headComponents}
+        {props.headComponents}
     </head>
     <body {...props.bodyAttributes}>
     {props.preBodyComponents}
