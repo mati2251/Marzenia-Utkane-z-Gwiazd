@@ -4,15 +4,15 @@ import styles from "../styles/pages.module.scss"
 import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider"
 import Artist from "../components/Artist/Artist"
 
-const artysci = () => {
+const artysci = (props) => {
     return (
       <Layout>
           <div className={styles.indexMain}>
-              <Artist/>
+              <Artist year={props.location.search}/>
               <SponsorSlider/>
           </div>
       </Layout>
     )
-}
+};
 
 export default artysci

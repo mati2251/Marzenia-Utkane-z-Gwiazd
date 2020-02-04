@@ -6,7 +6,7 @@ import {FaFacebook, FaInstagram, FaYoutube} from "react-icons/fa";
 const SponsorSlider = () => {
 	const query = useStaticQuery(
 		graphql`
-            query myquery {
+            query {
                 data {
                     sponsorzies {
                         link,
@@ -18,8 +18,8 @@ const SponsorSlider = () => {
             }
 		`);
 
-	const [i, setI] = useState(0)
-	const length = query.data.sponsorzies.length
+	const [i, setI] = useState(0);
+	const length = query.data.sponsorzies.length;
 	const logosJSX = query.data.sponsorzies.map((item, index) => {
 		let position = index + i - 1
 		if (length - 1 <= position) {
