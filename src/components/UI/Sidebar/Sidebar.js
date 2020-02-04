@@ -6,11 +6,11 @@ import { MdMenu, MdClose } from "react-icons/md"
 import NavigationElement from "../NavigationItem/NavigationElement"
 import { useState } from "react"
 
-const linkLabel = [{ label: "Geneza", toLink: "geneza" },
-    { label: "Artyści", toLink: "artysci" },
-    { label: "Bilety", toLink: "bilety" },
-    { label: "Organizatorzy", toLink: "organizatorzy" },
-    { label: "Kontakt", toLink: "kontakt" }]
+const linkLabel = [{ label: "Geneza", toLink: "/geneza" },
+    { label: "Artyści", toLink: "/artysci" },
+    { label: "Bilety", toLink: "/bilety" },
+    { label: "Organizatorzy", toLink: "/organizatorzy" },
+    { label: "Kontakt", toLink: "/kontakt" }]
 
 const allLinks = linkLabel.map((element) => {
       return (<NavigationElement toLink={element.toLink} key={element.toLink}

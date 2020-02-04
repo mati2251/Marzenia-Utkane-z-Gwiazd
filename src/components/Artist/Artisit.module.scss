@@ -1,0 +1,10 @@
+.Artist__labelContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.Artist__labelContainer select{
+  margin-left: 30px;
+}

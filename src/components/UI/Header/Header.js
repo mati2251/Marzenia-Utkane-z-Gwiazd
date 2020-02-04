@@ -4,11 +4,11 @@ import styles from "./Header.module.scss"
 import logo from "../../../resources/logo.png"
 import { Link } from "gatsby"
 
-const linkLabel = [{ label: "Geneza", toLink: "geneza" },
-  { label: "Artyści", toLink: "artysci" },
-  { label: "Bilety", toLink: "bilety" },
-  { label: "Organizatorzy", toLink: "organizatorzy" },
-  { label: "Kontakt", toLink: "kontakt" }]
+const linkLabel = [{ label: "Geneza", toLink: "/geneza" },
+  { label: "Artyści", toLink: "/artysci" },
+  { label: "Bilety", toLink: "/bilety" },
+  { label: "Organizatorzy", toLink: "/organizatorzy" },
+  { label: "Kontakt", toLink: "/kontakt" }]
 
 const Header = ({className}, ) => {
 

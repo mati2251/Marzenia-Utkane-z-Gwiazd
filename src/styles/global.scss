@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
 @import "color";
 
-html{
-  //overflow-x: hidden;
-}
-
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -32,6 +28,22 @@ h4{
 
 a{
   color: #445BF3;
+}
+
+select{
+  //all: unset;
+  width: 100px;
+  border: #7b7b7b solid 4px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #ffffff;
+  justify-content: center;
+  color: $font-color;
+}
+
+option:nth-last-child(1){
+  border-radius: 20px;
 }
 
 @media (max-width: 1200px ) {
