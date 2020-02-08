@@ -7,6 +7,7 @@ const kontakt = () => {
     return(
       <Layout>
           <div className={styles.indexMain}>
+              <h1>Strona w trakcie budowy</h1>v
               <SponsorSlider/>
           </div>
       </Layout>

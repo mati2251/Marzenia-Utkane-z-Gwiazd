@@ -1,0 +1,11 @@
+@import "../../../styles/color";
+
+.artist{
+  border: 5px solid $accent-color;
+  margin-bottom: 20px;
+}
+
+.artist img{
+  width: 400px;
+  height: 300px;
+}

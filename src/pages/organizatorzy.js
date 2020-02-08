@@ -7,6 +7,7 @@ const organizatorzy = () => {
     return (
       <Layout>
           <div className={styles.indexMain}>
+              <h1>Strona w trakcie budowy</h1>
               <SponsorSlider/>
           </div>
       </Layout>
