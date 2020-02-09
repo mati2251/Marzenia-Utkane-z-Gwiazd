@@ -8,3 +8,9 @@
 .Artist__labelContainer select{
   margin-left: 30px;
 }
+
+.Artists__Container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

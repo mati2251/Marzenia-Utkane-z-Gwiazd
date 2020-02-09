@@ -3,7 +3,7 @@ import {graphql, useStaticQuery} from "gatsby"
 import styles from "./SponsorsSlider.module.scss"
 import {FaFacebook, FaInstagram, FaYoutube} from "react-icons/fa";
 
-const SponsorSlider = () => {
+const SponsorSlider = (props) => {
 	const query = useStaticQuery(
 		graphql`
             query {
@@ -48,7 +48,7 @@ const SponsorSlider = () => {
 
 	return (
 		<>
-			<div className={styles.SponsorSlider__label}>
+			<div className={`${styles.SponsorSlider__label} ${[props.className]}`}>
 				<h2>Sponsorzy i Partnerzy:</h2>
 				<div className={styles.SponsorSlider__socialMedia}>
 					<a href="https://www.facebook.com/marzeniautkanezgwiazd/" target="_blank" rel="noopener noreferrer">

@@ -1,0 +1,45 @@
+@import "src/styles/color";
+
+$height : 400px;
+
+.artist{
+  border: $accent-color solid 5px;
+  width: 300px;
+  height: $height;
+  background-color: white;
+  margin: 10px;
+}
+
+.artist img{
+  width: 300px;
+  height: 200px;
+}
+
+.artist__nameDescription{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px;
+  width: 100%;
+}
+
+.artist__nameDescription h2{
+  margin-bottom: 10px;
+  color: $accent-color;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.artist__nameDescription h3{
+  font-size: 16px;
+}
+
+.artist--blackBorder{
+  position: relative;
+  height: $height;
+  width: 300px;
+  top: -99%;
+  z-index: -10;
+  border: $second-accent-color solid 5px;
+}
