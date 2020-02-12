@@ -1,8 +1,8 @@
 @import "src/styles/color";
 
-$height : 400px;
+$height: 400px;
 
-.artist{
+.artist {
   border: $accent-color solid 5px;
   width: 300px;
   height: $height;
@@ -10,12 +10,12 @@ $height : 400px;
   margin: 10px;
 }
 
-.artist img{
+.artist img {
   width: 300px;
   height: 200px;
 }
 
-.artist__nameDescription{
+.artist__nameDescription {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -24,22 +24,53 @@ $height : 400px;
   width: 100%;
 }
 
-.artist__nameDescription h2{
+.artist__nameDescription h2 {
   margin-bottom: 10px;
   color: $accent-color;
   font-weight: bold;
   font-size: 20px;
 }
 
-.artist__nameDescription h3{
+.artist__nameDescription h3 {
   font-size: 16px;
 }
 
-.artist--blackBorder{
+.artist--blackBorder {
   position: relative;
   height: $height;
   width: 300px;
   top: -99%;
   z-index: -10;
   border: $second-accent-color solid 5px;
+}
+
+@media (max-width: 340px) {
+  .artist img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .artist {
+    width: 250px;
+    height: 370px;
+  }
+
+  .artist--blackBorder {
+    width: 250px;
+    top: calc(-100% + 25px);
+    height: 370px ;
+  }
+
+  .artist__nameDescription{
+    width: 230px;
+  }
+
+  .artist__nameDescription h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .artist__nameDescription h3{
+    font-size: 14px ;
+  }
 }

@@ -7,6 +7,15 @@ const kontakt = () => {
     return(
       <Layout>
           <div className={styles.indexMain}>
+              <h1>Kontakt</h1>
+              <div>
+                  <h2>E-Mail</h2>
+                  <h2>Numer Telefony</h2>
+              </div>
+              <div>
+                  <h2>mail@example.com</h2>
+                  <h2>+48 666 666 666</h2>
+              </div>
               <SponsorSlider/>
           </div>
       </Layout>
