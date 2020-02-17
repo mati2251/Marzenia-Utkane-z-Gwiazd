@@ -4,6 +4,15 @@
   width: 800px;
 }
 
+.contact{
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__column{
+  margin-left: 15px;
+}
+
 @media (max-width: 900px) {
   .indexMain{
     width: 630px;
