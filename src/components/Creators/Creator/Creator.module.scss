@@ -1,6 +1,6 @@
 @import "src/styles/color";
 
-$height: 400px;
+$height: 300px;
 
 .creator {
   border: $accent-color solid 5px;
@@ -18,9 +18,8 @@ $height: 400px;
 .creator__nameDescription {
   padding: 10px;
   display: flex;
+  height: 100px;
   flex-direction: column;
-  justify-content: space-between;
-  height: 170px;
   width: 100%;
 }
 
@@ -39,7 +38,7 @@ $height: 400px;
   position: relative;
   height: $height;
   width: 300px;
-  top: -99%;
+  top: -108.5%;
   z-index: -10;
   border: $second-accent-color solid 5px;
 }
@@ -52,17 +51,17 @@ $height: 400px;
 
   .creator {
     width: 250px;
-    height: 370px;
+    height: 250px;
   }
 
   .creator--blackBorder {
     width: 250px;
-    top: calc(-100% + 25px);
-    height: 370px ;
+    top: -110%;
+    height: 250px ;
   }
 
   .creator__nameDescription{
-    width: 230px;
+    width: 250px;
   }
 
   .creator__nameDescription h2 {
