@@ -45,6 +45,12 @@
 
 @media (max-width: 750px) {
   .Artists__Container {
+    width: 340px;
+  }
+}
+
+@media (max-width: 340px) {
+  .Artists__Container {
     width: 280px;
   }
 }

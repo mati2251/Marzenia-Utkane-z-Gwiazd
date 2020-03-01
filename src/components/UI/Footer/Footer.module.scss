@@ -6,7 +6,7 @@
   align-items: center;
   background: transparent linear-gradient(180deg, $footer-first-color 0%, $footer-second-color 100%) 0 0 no-repeat padding-box;
   border: 1px solid #707070;
-  width: 100%;
+  width: calc(100% - 2px);
   z-index: 3;
   color: white;
 }

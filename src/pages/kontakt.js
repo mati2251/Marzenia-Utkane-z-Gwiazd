@@ -5,7 +5,6 @@ import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider"
 import { graphql } from "gatsby"
 
 const kontakt = props => {
-  console.log(props)
   return (
     <Layout>
       <div className={styles.indexMain}>

@@ -9,7 +9,7 @@ const Layout = props => (
     <Sidebar />
     <Header />
     <main className={style.layout__main}>{props.children}</main>
-    <Footer />
+    <Footer/>
   </>
 )
 

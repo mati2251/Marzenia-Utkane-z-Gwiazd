@@ -17,7 +17,6 @@ const organizatorzy = ({ data }) => {
     )
   })
 
-  console.log(creatorsJSX)
 
   return (
     <Layout>
