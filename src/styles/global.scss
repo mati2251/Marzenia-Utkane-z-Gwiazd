@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
 @import "color";
 
+html{
+  overflow-x: hidden;
+}
+
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;

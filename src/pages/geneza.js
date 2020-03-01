@@ -5,16 +5,15 @@ import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider"
 import GenesisText from "../components/GenesisText/GenesisText"
 
 const geneza = () => {
-
-    return (
-      <Layout>
-          <div className={style.indexMain}>
-              <h1>Geneza Powstania Koncertu</h1>
-              <GenesisText/>
-              <SponsorSlider/>
-          </div>
-      </Layout>
-    )
+  return (
+    <Layout>
+      <div className={style.indexMain}>
+        <h1>Geneza Powstania Koncertu</h1>
+        <GenesisText />
+        <SponsorSlider />
+      </div>
+    </Layout>
+  )
 }
 
 export default geneza
