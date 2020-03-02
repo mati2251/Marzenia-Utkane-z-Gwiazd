@@ -65,7 +65,7 @@ const Footer = () => {
               <img
                 src={whiteLogo}
                 className={styles.footer__titleLogo}
-                alt="białe logo"
+                alt="logo"
               />
               <h2>Marzenia Utkane z Gwiazd</h2>
           </section>
