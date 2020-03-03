@@ -6,11 +6,13 @@
   overflow-x: hidden;
   position: relative;
   padding-top: 20px;
+  overflow-y: hidden;
   height: 120px;
 }
 
 .SponsorSlider img{
   width: 100%;
+  cursor: pointer;
   height: auto;
 }
 
@@ -67,7 +69,7 @@
 
 @media (max-width: 500px) {
   .SponsorSlider{
-    heitekstght: 55px;
+    height: 55px;
   }
 
   .SponsorSlider__label h2{
@@ -106,5 +108,6 @@
 .SponsorSlider a{
   transition: all 0.5s ease;
   position: absolute;
-  width: 14.3%;
+  width: 13.3%;
+  padding-left: 1%;
 }
