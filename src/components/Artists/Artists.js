@@ -63,7 +63,7 @@ const Artists = props => {
       <h2 className={styles.Artist__labelContainer}>
         Edycja Koncertu
         <select
-          onClick={value => navigate(`/artysci?rok=${value.target.value}`)}
+          onChange={value => navigate(`/artysci?rok=${value.target.value}`)}
         >
           {yearsJSX}
         </select>
