@@ -2,6 +2,7 @@ import React from "react"
 import {graphql, useStaticQuery} from "gatsby"
 import SponsorSlider from "../SponsorsSlider/SponsorsSlider"
 import styles from "./Tickets.module.scss"
+import img from "../../resources/bilety.jpg";
 
 const Tickets = () => {
 	const query = useStaticQuery(
@@ -9,9 +10,6 @@ const Tickets = () => {
             query {
                 data {
                     bileties {
-                        platformaZdjecie {
-                            url
-                        }
                         tekst
                         link
                     }
@@ -25,14 +23,10 @@ const Tickets = () => {
 			<h2 className={`${styles.headerStyle} ${styles.Tickets__label}`}>
 				Bilety
 			</h2>
+			<div className={styles.Tickets__imageBlack}>
+				<img src={img} className={styles.Tickets__image} alt="Widownia na koncercie"/>
+			</div>
 			<div className={styles.Tickets__container}>
-				{query.data.bileties[0].platformaZdjecie !== null ? (
-					<img
-						src={query.data.bileties[0].platformaZdjecie.url}
-						className={styles.Tickets__image}
-						alt="Logo platformy do sprzedaży"
-					/>
-				) : null}
 				<h2 className={styles.Tickets__label}>
 					{query.data.bileties[0].tekst}
 					{query.data.bileties[0].link !== null ? (
