@@ -96,7 +96,6 @@ const Footer = () => {
 						</div>
 						<div>
 							<h3 className={styles.footer__mainElementDark}>
-								{console.log(data.data.kontakts[0].mail)}
 								{data.data.kontakts[0].mail}
 							</h3>
 							<h3 className={styles.footer__mainElementDark}>

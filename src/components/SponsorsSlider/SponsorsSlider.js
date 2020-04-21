@@ -28,7 +28,9 @@ const SponsorSlider = props => {
     }
     if (position < 7) {
       return (
-        <a href={item.link} key={index} style={{ left: `${position * 14.3}%` }}>
+        <a target="_blank"
+           rel="noopener noreferrer"
+           href={item.link} key={index} style={{ left: `${position * 14.3}%` }}>
           <img src={item.logo.url} alt="logo sponsora" />
         </a>
       )
