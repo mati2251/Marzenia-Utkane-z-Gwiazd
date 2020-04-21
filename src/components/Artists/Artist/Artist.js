@@ -10,7 +10,7 @@ const Artist = props => {
 				<h3 className={style.artist__description}>{props.description}</h3>
 				{props.link !== null ?
 					<a href={props.link}>
-						<h3> Wiecej o mnie </h3>
+						<h3> Dowiedz się wiecej</h3>
 					</a> : null}
 			</div>
 			<div className={style.artistBlackBorder}/>
