@@ -104,8 +104,12 @@
 @media (max-width: 460px) {
   .footer {
     h3 {
-      font-size: 14px;
+      font-size: 12px;
     }
+  }
+
+  .footer__main--contactElement {
+    width: 120px;
   }
 }
 
@@ -116,7 +120,7 @@
     }
 
     h3 {
-      font-size: 12px;
+      font-size: 10px;
     }
 
   }
@@ -138,7 +142,7 @@
     }
 
     h3 {
-      font-size: 10px;
+      font-size: 8px;
     }
   }
 
