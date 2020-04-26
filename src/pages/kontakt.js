@@ -3,12 +3,16 @@ import Layout from "../components/UI/Layout/Layout"
 import styles from "../styles/pages.module.scss"
 import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider"
 import { graphql } from "gatsby"
+import img from "../resources/core.png";
 
 const kontakt = props => {
   return (
     <Layout>
       <div className={styles.indexMain}>
         <h1>Kontakt</h1>
+        <div className={styles.Contact__imageBlack}>
+          <img src={img} className={styles.Contact__image} alt="Core Team"/>
+        </div>
         <div className={styles.contact}>
           <div>
             <h2>E-Mail</h2>
