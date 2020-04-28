@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import {graphql, Link, useStaticQuery} from "gatsby"
 import styles from "./SlideShowPhoto.module.scss"
 
 const Slider = () => {
@@ -64,7 +64,7 @@ const Slider = () => {
     <div className={styles.slider}>
       <div className={styles.slideShowPhoto}>
         <div className={styles.slideShowPhoto__photos}>
-          <h1>Charytatywny Koncert Wielkanocny</h1>
+          <Link to="sponsorzy" style={{"cursor": "pointer"}}><h1>Charytatywny Koncert Wielkanocny</h1></Link>
           {imagesJSX}
         </div>
       </div>

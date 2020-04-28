@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import {graphql, Link, useStaticQuery} from "gatsby"
 import styles from "./SponsorsSlider.module.scss"
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
 
@@ -58,7 +58,9 @@ const SponsorSlider = props => {
   return (
     <>
       <div className={`${styles.SponsorSlider__label} ${[props.className]}`}>
+        <Link to="sponsorzy" style={{"all": "unset", "cursor": "pointer"}}>
         <h2>Sponsorzy i Partnerzy:</h2>
+        </Link>
         <div className={styles.SponsorSlider__socialMedia}>
           <a
             href="https://www.facebook.com/marzeniautkanezgwiazd/"

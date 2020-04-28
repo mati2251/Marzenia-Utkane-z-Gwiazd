@@ -19,7 +19,7 @@ const Header = ({ className }) => {
       <NavigationElement
         toLink={element.toLink}
         className={styles.header__navigationElement}
-        key={element.toLink}
+        key={element.toLink}Sponsorzy
       >
         {element.label}
       </NavigationElement>
