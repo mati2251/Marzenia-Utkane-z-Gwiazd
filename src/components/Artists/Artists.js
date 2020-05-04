@@ -1,8 +1,7 @@
 import React from "react"
 import styles from "./Artisits.module.scss"
 import style from "../../styles/pages.module.scss"
-import {graphql, navigate} from "gatsby"
-import {useStaticQuery} from "gatsby"
+import {graphql, navigate, useStaticQuery} from "gatsby"
 import Artist from "./Artist/Artist"
 import SponsorSlider from "../SponsorsSlider/SponsorsSlider"
 

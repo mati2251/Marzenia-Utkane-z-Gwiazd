@@ -3,7 +3,7 @@
 $height: 400px;
 
 .artist {
-  border: $accent-color solid 5px;
+  border: $accent-color solid 10px;
   width: 300px;
   height: $height;
   background-color: white;
@@ -41,7 +41,7 @@ $height: 400px;
   width: 300px;
   top: -99%;
   z-index: -10;
-  border: $second-accent-color solid 5px;
+  border: $second-accent-color solid 10px;
 }
 
 @media (max-width: 340px) {
