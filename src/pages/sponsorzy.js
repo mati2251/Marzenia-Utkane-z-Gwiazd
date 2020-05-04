@@ -8,11 +8,12 @@ const sponsorzy = ({data}) => {
 
 	return (
 		<Layout>
-			<div className={styles.indexMain}>
 				<h1>Sponsorzy i Partnerzy</h1>
-				<h2>Bez nich było by trudno zorganizować nasz koncert. Niektórzy służą pomocą. Inni służa promocją a jeszcze inni pomocą finansową. Z czego jesteśmy bardzo zadowoleni 😀 !!!</h2>
-				<Sponsor logo={data.data.sponsorzies[0].logo.url}>{data.data.sponsorzies[0].nazwa}</Sponsor>
-			</div>
+				<h2>Bez nich było by trudno zorganizować nasz koncert. Pomoc jaką oferują jest różna ale na pewno bardzo przydatna 😀</h2>
+				<div className={styles.sponsors}>
+					<Sponsor logo={data.data.sponsorzies[0].logo.url}
+					         url={data.data.sponsorzies[0].link}>{data.data.sponsorzies[0].nazwa}</Sponsor>
+				</div>
 		</Layout>
 	)
 }

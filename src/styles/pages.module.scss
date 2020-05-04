@@ -12,6 +12,12 @@
   height: 100%;
 }
 
+.sponsors{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
 
 .indexMain{
   display: flex;
