@@ -3,7 +3,7 @@
 $height: 300px;
 
 .creator {
-  border: $accent-color solid 5px;
+  border: $accent-color solid 10px;
   width: 300px;
   height: $height;
   background-color: white;
@@ -40,10 +40,10 @@ $height: 300px;
   width: 300px;
   top: -108.5%;
   z-index: -10;
-  border: $second-accent-color solid 5px;
+  border: $second-accent-color solid 10px;
 }
 
-@media (max-width: 340px) {
+@media (max-width: 360px) {
   .creator img {
     width: 250px;
     height: 150px;

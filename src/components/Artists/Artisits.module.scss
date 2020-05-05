@@ -22,36 +22,30 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1680px;
-}
-
-@media (max-width: 1700px) {
-  .Artists__Container {
-    width: 1340px;
-  }
+  width: 1360px;
 }
 
 @media (max-width: 1400px) {
-  .Artists__Container {
-    width: 1000px;
+  .Artists__Container{
+    width: 1020px;
   }
 }
 
-@media (max-width: 1100px) {
-  .Artists__Container {
-    width: 660px;
+@media (max-width: 1040px) {
+  .Artists__Container{
+    width: 680px;
   }
 }
 
-@media (max-width: 750px) {
-  .Artists__Container {
+@media (max-width: 700px) {
+  .Artists__Container{
     width: 340px;
   }
 }
 
-@media (max-width: 340px) {
-  .Artists__Container {
-    width: 280px;
+@media (max-width: 360px) {
+  .Artists__Container{
+    width: 300px;
   }
 }
 

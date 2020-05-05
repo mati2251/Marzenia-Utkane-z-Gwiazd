@@ -64,6 +64,8 @@ const Artists = props => {
 					{yearsJSX}
 				</select>
 			</h2>
+			<h2 style={{"padding": "20px", "fontStyle": "italic"}}>To oni są odpowiedzialni za rorywkę na naszych koncertach. Robią to świetnie. Sprawdźcie sami!</h2>
+
 			<div className={styles.Artists__Container}>{artistsJSX}</div>
 			<div className={style.indexMain}>
 				<SponsorSlider/>
