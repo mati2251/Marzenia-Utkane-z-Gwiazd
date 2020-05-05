@@ -8,7 +8,7 @@ const geneza = () => {
   return (
     <Layout>
       <div className={style.indexMain}>
-        <h1>Geneza Powstania Koncertu</h1>
+        <h1 style={{"textAlign": "center"}}>Geneza Powstania Koncertu</h1>
         <GenesisText />
         <SponsorSlider />
       </div>

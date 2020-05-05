@@ -9,7 +9,7 @@ const kontakt = props => {
   return (
     <Layout>
       <div className={styles.indexMain}>
-        <h1>Kontakt</h1>
+        <h1 style={{"textAlign": "center"}} >Kontakt</h1>
         <div className={styles.Contact__imageBlack}>
           <img src={img} className={styles.Contact__image} alt="Core Team"/>
         </div>

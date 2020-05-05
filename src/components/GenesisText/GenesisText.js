@@ -26,7 +26,7 @@ const GenesisText = () => {
         className={styles.GenesisText__photo}
         alt={"genesis"}
       />
-      <h2>{query.data.genezas[0].tekst}</h2>
+      <h2 >{query.data.genezas[0].tekst}</h2>
       <img
         src={query.data.genezas[1].zdjecie.url}
         alt={"genesis"}

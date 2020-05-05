@@ -19,18 +19,6 @@
   flex-direction: row;
 }
 
-.Tickets__label {
-  font-size: 22px;
-  display: flex;
-  flex-direction: column;
-}
-
-.headerStyle {
-  text-align: center;
-  color: #d960a7;
-  padding-bottom: 10px;
-}
-
 @media (max-width: 900px) {
   .Tickets__label {
     font-size: 20px;

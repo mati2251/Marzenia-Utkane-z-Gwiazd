@@ -4,6 +4,7 @@ import style from "../../styles/pages.module.scss"
 import {graphql, navigate, useStaticQuery} from "gatsby"
 import Artist from "./Artist/Artist"
 import SponsorSlider from "../SponsorsSlider/SponsorsSlider"
+import Layout from "../UI/Layout/Layout";
 
 const Artists = props => {
 	const query = useStaticQuery(graphql`
@@ -55,6 +56,7 @@ const Artists = props => {
 
 	return (
 		<div className={styles.container}>
+			<h1>Artyści</h1>
 			<h2 className={styles.Artist__labelContainer}>
 				Edycja Koncertu
 				<select

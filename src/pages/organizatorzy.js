@@ -33,15 +33,16 @@ const organizatorzy = ({data}) => {
 
 	return (
 		<Layout>
-			<div>
-				<h1>Organizatorzy założyciele</h1>
-				<div className={stylesFromArtist.Artists__Container}>
+			<h1>Organizatorzy</h1>
+			<h2 style={{"fontStyle": "italic"}}>Mają przeróżne zadania i umiejętności ale razem spinają cały koncert w
+				coś wielkiego!</h2>
+			<h1>Organizatorzy założyciele</h1>
+			<div className={stylesFromArtist.Artists__Container}>
 				{headCreatorsJSX}
-				</div>
-				<h1>Pozostali Organizatorzy</h1>
-				<div className={stylesFromArtist.Artists__Container}>
+			</div>
+			<h1>Pozostali Organizatorzy</h1>
+			<div className={stylesFromArtist.Artists__Container}>
 				{creatorsJSX}
-				</div>
 			</div>
 			<div className={styles.indexMain}>
 				<SponsorSlider/>

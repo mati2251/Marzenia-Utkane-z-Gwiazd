@@ -20,9 +20,9 @@ const Tickets = () => {
 
 	return (
 		<>
-			<h2 className={`${styles.headerStyle} ${styles.Tickets__label}`}>
+			<h1 style={{"textAlign": "center"}}>
 				Bilety
-			</h2>
+			</h1>
 			<div className={styles.Tickets__imageBlack}>
 				<img src={img} className={styles.Tickets__image} alt="Widownia na koncercie"/>
 			</div>

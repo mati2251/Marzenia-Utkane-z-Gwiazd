@@ -15,7 +15,7 @@ const sponsorzy = ({data}) => {
 	return (
 		<Layout>
 				<h1>Sponsorzy i Partnerzy</h1>
-				<h2>Bez nich było by trudno zorganizować nasz koncert. Pomoc jaką oferują jest różna ale na pewno bardzo przydatna 😀</h2>
+				<h2 style={{"fontStyle": "italic"}}>Bez nich było by trudno zorganizować nasz koncert. Pomoc jaką oferują jest różna ale na pewno bardzo przydatna 😀</h2>
 				<div className={styles.sponsors}>
 					{sposnsorsJSX}
 				</div>
