@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 const linkLabel = [
   {label: "Geneza", toLink: "/geneza"},
-  {label: "Artyści", toLink: "/artysci"},
+  {label: "Koncerty", toLink: "/koncerty"},
   {label: "Bilety", toLink: "/bilety"},
   {label: "Organizatorzy", toLink: "/organizatorzy"},
   {label: "Sponsorzy", toLink: "/sponsorzy"},
