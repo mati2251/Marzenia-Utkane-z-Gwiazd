@@ -4,6 +4,8 @@ import styles from "../styles/pages.module.scss"
 import stylesGenesis from "../components/GenesisText/GenesisText.module.scss"
 import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider";
 import {graphql, Link, navigate} from "gatsby";
+import ImageGallery from "react-image-gallery";
+import thumbnails from "../components/Thumbnails/Thumbnails"
 
 const koncert = (props) => {
 	if (props.location.search !== "") {
@@ -13,7 +15,10 @@ const koncert = (props) => {
 		const yearDetails = props.data.data.roks.filter((item) => {
 			return item.value === year
 		})[0];
-		console.log(yearDetails)
+		const images = yearDetails.zdjecia.map( (item) => {
+			return { original: item.url, thumbnail: thumbnails(item.id)}
+		})
+		console.log(images)
 		return (
 			<Layout>
 				<h1>Koncert {yearDetails.rok}</h1>
@@ -36,12 +41,16 @@ const koncert = (props) => {
 					</div>
 					<h2>{yearDetails.tekstCel}</h2>
 					<h1>Wideo z koncertu</h1>
-					<div>
-						<iframe height="auto" width="100%" src="https://www.youtube.com/embed/07RcBEHKuW0"
-						        frameBorder="0"
-						        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-						        allowFullScreen/>
+					<div className={stylesGenesis.GenesisText__photo}>
+						<div className={styles.yt__video}>
+							<iframe height="100%" width="100%" src={yearDetails.yt}
+							        frameBorder="0"
+							        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+							        allowFullScreen/>
+						</div>
 					</div>
+					<h1>Zdjecia</h1>
+					<ImageGallery items={images}/>
 					<SponsorSlider/>
 				</div>
 			</Layout>
@@ -61,11 +70,13 @@ export const data = graphql`
                 tekstKoncert
                 value
                 krotkiOpis
+                yt
                 celZdjecie {
                     url
                 }
                 zdjecia {
                     url
+	                id
                 }
                 zdjecieGlowne {
                     url
