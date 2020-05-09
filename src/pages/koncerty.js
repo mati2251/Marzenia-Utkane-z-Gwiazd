@@ -10,7 +10,6 @@ const koncerty = ({data}) => {
 		return <ConcertLink value={item.value} image={item.zdjecieGlowne.url} name={item.rok} key={item.value}/>
 	})
 
-
 	return (
 		<Layout>
 			<h1>Koncerty</h1>

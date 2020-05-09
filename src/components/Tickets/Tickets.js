@@ -29,14 +29,16 @@ const Tickets = () => {
 			<div className={styles.Tickets__container}>
 				<h2 className={styles.Tickets__label}>
 					{query.data.bileties[0].tekst}
-					{query.data.bileties[0].link !== null ? (
+				</h2>
+				{query.data.bileties[0].link !== null ? (
+					<h2>
 						<a target="_blank"
 						   rel="noopener noreferrer"
 						   href={query.data.bileties[0].link}>
 							Kliknij link aby dowiedzieć się wiecej
 						</a>
-					) : null}
-				</h2>
+					</h2>
+				) : null}
 			</div>
 			<SponsorSlider/>
 		</>

@@ -1,8 +1,25 @@
 @import "../../styles/color";
 
 .GenesisText__photo{
+  position: relative;
   margin: 20px 0 20px 0;
   border: 10px $accent-color solid;
   height: auto;
   width: calc(100% - 20px);
+}
+
+.GenesisText__photo:after{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: 10px solid $second-accent-color;
+}
+
+.GenesisText__photo img{
+  width: 100%;
+  height: 100%;
 }

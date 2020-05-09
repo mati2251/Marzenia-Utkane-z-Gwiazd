@@ -58,7 +58,7 @@ const SponsorSlider = props => {
   return (
     <>
       <div className={`${styles.SponsorSlider__label} ${[props.className]}`}>
-        <Link to="sponsorzy" style={{"all": "unset", "cursor": "pointer"}}>
+        <Link to="/sponsorzy" style={{"all": "unset", "cursor": "pointer"}}>
         <h2>Sponsorzy i Partnerzy:</h2>
         </Link>
         <div className={styles.SponsorSlider__socialMedia}>

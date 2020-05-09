@@ -4,7 +4,6 @@ import style from "../../styles/pages.module.scss"
 import {graphql, navigate, useStaticQuery} from "gatsby"
 import Artist from "./Artist/Artist"
 import SponsorSlider from "../SponsorsSlider/SponsorsSlider"
-import Layout from "../UI/Layout/Layout";
 
 const Artists = props => {
 	const query = useStaticQuery(graphql`

@@ -18,7 +18,6 @@
   left: 0;
   z-index: -1;
   border: 10px solid $second-accent-color;
-  overflow: hidden;
 }
 
 .link{
@@ -46,4 +45,28 @@
 
 .overflowHidden{
   overflow: hidden;
+}
+
+@media (max-width: 360px) {
+  .concertLink {
+    width: 250px;
+    height: 166px;
+  }
+
+  .concertLink img{
+    width: 250px;
+    height: 166px;
+  }
+}
+
+@media (max-width: 310px) {
+  .concertLink {
+    width: 200px;
+    height: 133px;
+  }
+
+  .concertLink img{
+    width: 200px;
+    height: 133px;
+  }
 }
