@@ -6,8 +6,6 @@ import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider";
 import {graphql, Link, navigate} from "gatsby";
 import ImageGallery from "react-image-gallery";
 import thumbnails from "../components/Thumbnails/Thumbnails"
-import koncerty from "./koncerty";
-import Sponsor from "../components/Sponsor/Sponsor";
 
 const koncert = (props) => {
 	if (props.location.search !== "") {
@@ -17,7 +15,7 @@ const koncert = (props) => {
 		const yearDetails = props.data.data.roks.filter((item) => {
 			return item.value === year
 		})[0];
-		if(yearDetails !== undefined) {
+		if (yearDetails !== undefined) {
 			const images = yearDetails.zdjecia.map((item) => {
 				return {original: item.url, thumbnail: thumbnails(item.id)}
 			})
@@ -34,50 +32,64 @@ const koncert = (props) => {
 						</div>
 						<h2>{yearDetails.tekstKoncert}</h2>
 						<h2><Link to={`/artysci?rok=${yearDetails.value}`}>Zobacz artystów tej edycji</Link></h2>
-						<h1>Cel charytatywny Koncertu</h1>
-						<div className={stylesGenesis.GenesisText__photo}>
-							<img
-								src={yearDetails.celZdjecie.url}
-								alt="Marzenia Utkane z Gwiazd"
-							/>
-						</div>
-						<h2>{yearDetails.tekstCel}</h2>
-						<h1>Wideo z koncertu</h1>
-						<div className={stylesGenesis.GenesisText__photo}>
-							<div className={styles.yt__video}>
-								<iframe height="100%" width="100%" src={yearDetails.yt}
-								        frameBorder="0"
-								        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-								        allowFullScreen/>
-							</div>
-						</div>
-						<h1>Zdjecia</h1>
-						<ImageGallery items={images}/>
-						<SponsorSlider/>
+						{(yearDetails.celZdjecie !== undefined && yearDetails.tekstCel !== undefined) ?
+							<>
+								<h1>Cel charytatywny Koncertu</h1>
+								<div className={stylesGenesis.GenesisText__photo}>
+									<img
+										src={yearDetails.celZdjecie.url}
+										alt="Marzenia Utkane z Gwiazd"
+									/>
+								</div>
+								<h2>{yearDetails.tekstCel}</h2>
+							</>
+							: null
+						}
+						{(yearDetails.yt !== undefined) ?
+							<>
+								<h1>Wideo z koncertu</h1>
+								<div className={stylesGenesis.GenesisText__photo}>
+									<div className={styles.yt__video}>
+										<iframe height="100%" width="100%" src={yearDetails.yt}
+										        frameBorder="0"
+										        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+										        allowFullScreen/>
+									</div>
+								</div>
+							</>
+							: null
+						}
+						{images !== undefined ?
+							<>
+								<h1>Zdjecia</h1>
+								<ImageGallery items={images}/>
+								<SponsorSlider/>
+							</>
+							: null
+						}
 					</div>
 				</Layout>
 			)
-		}
-		else{
-			return(
+		} else {
+			return (
 				<Layout>
 					<div className={styles.indexMain}>
 						<h2>Jeszcze nie było takiego koncertu <span role="img">😄</span></h2>
-						<h2> <Link to="/koncerty">Cofnij się do zakładki koncerty aby poprawnie wybrać edycję</Link></h2>
+						<h2><Link to="/koncerty">Cofnij się do zakładki koncerty aby poprawnie wybrać edycję</Link></h2>
 						<SponsorSlider/>
 					</div>
 				</Layout>
 			)
 		}
 	} else {
-		return(
-		<Layout>
-			<div className={styles.indexMain}>
-				<h2>Jeszcze nie było takiego koncertu <span role="img">😄</span></h2>
-				<h2> <Link to="/koncerty">Cofnij się do zakładki koncerty aby poprawnie wybrać edycję</Link></h2>
-				<SponsorSlider/>
-			</div>
-		</Layout>
+		return (
+			<Layout>
+				<div className={styles.indexMain}>
+					<h2>Jeszcze nie było takiego koncertu <span role="img">😄</span></h2>
+					<h2><Link to="/koncerty">Cofnij się do zakładki koncerty aby poprawnie wybrać edycję</Link></h2>
+					<SponsorSlider/>
+				</div>
+			</Layout>
 		)
 	}
 }
@@ -97,7 +109,7 @@ export const data = graphql`
                 }
                 zdjecia {
                     url
-	                id
+                    id
                 }
                 zdjecieGlowne {
                     url

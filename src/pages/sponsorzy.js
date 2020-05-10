@@ -8,7 +8,7 @@ const sponsorzy = ({data}) => {
 
 	const sposnsorsJSX = data.data.sponsorzies.map((item) => {
 		return(
-			<Sponsor logo={item.logo.url} url={item.link} >{item.nazwa}</Sponsor> )
+			<Sponsor logo={item.logo.url} url={item.link} key={item.link}>{item.nazwa}</Sponsor> )
 	})
 
 	return (
