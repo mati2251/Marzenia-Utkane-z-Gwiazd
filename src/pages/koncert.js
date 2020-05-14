@@ -59,14 +59,14 @@ const koncert = (props) => {
 							</>
 							: null
 						}
-						{images !== undefined ?
+						{images.length !== 0 ?
 							<>
 								<h1>Zdjecia</h1>
 								<ImageGallery items={images}/>
-								<SponsorSlider/>
 							</>
 							: null
 						}
+						<SponsorSlider/>
 					</div>
 				</Layout>
 			)
