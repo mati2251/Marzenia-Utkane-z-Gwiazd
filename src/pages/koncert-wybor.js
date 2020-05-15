@@ -14,8 +14,13 @@ const koncert = (props) => {
 		const year = httpQuery[yearIndex];
 		return (
 			<Layout>
-				<ConcertLink to={`/koncert?rok=${year}`} name={"Informacje o koncercie"} image={koncertImg}/>
-				<ConcertLink to={`/artysci?rok=${year}`} name={"Artyści koncertu"} image={artysci}/>
+				<div className={styles.concert__choose}>
+					<ConcertLink to={`/koncert?rok=${year}`} name={"Informacje o koncercie"} image={koncertImg}/>
+					<ConcertLink to={`/artysci?rok=${year}`} name={"Artyści koncertu"} image={artysci}/>
+				</div>
+				<div className={styles.indexMain}>
+					<SponsorSlider/>
+				</div>
 			</Layout>
 		)
 	} else {

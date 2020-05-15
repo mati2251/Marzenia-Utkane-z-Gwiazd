@@ -12,7 +12,7 @@
   height: 100%;
 }
 
-.sponsors{
+.sponsors {
   margin: 10px;
   display: flex;
   flex-direction: row;
@@ -21,135 +21,152 @@
   width: 1050px;
 }
 
-.indexMain{
+.indexMain {
   display: flex;
   flex-direction: column;
   width: 800px;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: row;
 }
 
-.contact__column{
+.contact__column {
   margin-left: 15px;
 }
 
-.concerts__container{
+.concerts__container {
   width: 1080px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.yt__video{
+.yt__video {
   width: 780px;
   height: 438px;
 }
 
+.concert__choose {
+  width: 720px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1100px) {
-  .sponsors{
+  .sponsors {
     width: 840px;
   }
 
-  .concerts__container{
+  .concerts__container {
     width: 720px;
   }
 }
 
 @media (max-width: 900px) {
-  .indexMain{
+  .indexMain {
     width: 630px;
   }
 
-  .yt__video{
+  .yt__video {
     width: 610px;
     height: 343px;
   }
 
-  .Contact__image--black{
+  .Contact__image--black {
     height: 167.75px;
   }
 
-  .sponsors{
+  .sponsors {
     width: 630px;
   }
 }
 
 @media (max-width: 720px) {
-  .concerts__container{
+  .concerts__container {
+    width: 360px;
+  }
+  .concert__choose {
     width: 360px;
   }
 }
 
 @media (max-width: 700px) {
-  .indexMain{
+  .indexMain {
     width: 430px;
   }
 
-  .yt__video{
+  .yt__video {
     width: 410px;
     height: 230px;
   }
 
-  .Contact__image--black{
+  .Contact__image--black {
     height: 112.75px;
   }
 
-  .sponsors{
+  .sponsors {
     width: 420px;
   }
 }
 
 @media (max-width: 500px) {
 
-  .sponsors{
+  .sponsors {
     width: 210px;
   }
 
-  .indexMain{
+  .indexMain {
     width: 330px;
   }
 
-  .yt__video{
+  .yt__video {
     width: 310px;
     height: 174px;
   }
 
-  .Contact__image--black{
+  .Contact__image--black {
     height: 85.25px;
   }
 }
 
 @media (max-width: 360px) {
-  .concerts__container{
+  .concerts__container {
+    width: 310px;
+  }
+
+  .concert__choose {
     width: 310px;
   }
 }
 
 @media (max-width: 320px) {
-  .concerts__container{
+  .concerts__container {
+    width: 260px;
+  }
+
+  .concert__choose {
     width: 260px;
   }
 }
 
 @media (max-width: 350px) {
-  .indexMain{
+  .indexMain {
     width: 280px;
   }
 
-  .Contact__image--black{
+  .Contact__image--black {
     height: 71.5px;
   }
 
-  .yt__video{
+  .yt__video {
     width: 260px;
     height: 146px;
   }
 }
 
 @media (max-width: 285px) {
-  .yt__video{
+  .yt__video {
     width: 100%;
     height: 100%;
   }
