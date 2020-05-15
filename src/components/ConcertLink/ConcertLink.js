@@ -3,7 +3,7 @@ import {Link} from "gatsby";
 import style from './ConcertLink.module.scss'
 
 const ConcertLink = (props) => (
-	<Link to={`/koncert?rok=${props.value}`} className={style.link}>
+	<Link to={props.to} className={style.link}>
 		<div className={style.concertLink}>
 			<div className={style.overflowHidden}>
 				<img src={props.image} alt={props.name}/>

@@ -7,7 +7,7 @@ import SponsorSlider from "../components/SponsorsSlider/SponsorsSlider";
 
 const koncerty = ({data}) => {
 	const concertsJSX = data.data.roks.map((item) => {
-		return <ConcertLink value={item.value} image={item.zdjecieGlowne.url} name={item.rok} key={item.value}/>
+		return <ConcertLink value={item.value} image={item.zdjecieGlowne.url} to={`/koncert-wybor?rok=${item.value}`} name={item.rok} key={item.value}/>
 	})
 
 	return (
