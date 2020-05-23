@@ -24,7 +24,7 @@ export default function HTML(props) {
           content="Marzenia Utkane z Gwiazd to charytatywny koncert wielkanocny odbywający się w Szczecinie. Na celu ma pomóc ludziom potrzebującym i pokazać się młodym talentom."
         />
         <meta property="og:image" content="" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://marzeniautkanezgwiazd.pl/" />
         <meta property="og:site_name" content="Marzenia Utkane z Gwiazd" />
         <link rel="icon" href="resources/logo.png" />
         {props.headComponents}
