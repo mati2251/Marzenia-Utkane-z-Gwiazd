@@ -12,6 +12,10 @@
   background-color: white;
 }
 
+.header h2{
+  color: $font-color;
+}
+
 .sidebar{
   display: none;
   z-index: 50;
@@ -90,6 +94,7 @@
 
 .aside__navigationElement{
   padding: 20px;
+  color: $font-color
 }
 
 .aside__closeMenu--Button{
